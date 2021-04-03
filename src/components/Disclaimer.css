@@ -1,0 +1,30 @@
+.disclaimer {
+  padding: 0.5rem;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 3px #111;
+  border-radius: 20px;
+}
+
+.disclaimer__text {
+  display: flex;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+  letter-spacing: 1px;
+  color: rgb(5, 11, 66);
+  margin: 0.3rem;
+}
+.disclaimer__text > strong {
+  margin: 0 5px 0 5px;
+}
+
+.disclaimer__text > .MuiSvgIcon-root {
+  font-size: 1.2rem;
+  /* margin-right: 0.3rem; */
+}
+.disclaimer__text--warning {
+  color: maroon;
+}

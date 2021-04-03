@@ -1,29 +1,52 @@
+.searchPage {
+  min-height: 100vh;
+}
+
 .searchPage__header {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   background: #fff;
   z-index: 100;
-  padding: 2rem;
-  border: 1px solid lightgray;
+  padding: 2rem 2rem 0rem 2rem;
+  border-bottom: 1px solid lightgray;
 }
+
+.searchPage__headerLeft {
+  display: flex;
+  min-width: 800px;
+}
+.searchPage__headerRight {
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
 .searchPage__logo {
   object-fit: contain;
   height: 50px;
-  margin-right: 3rem;
+  margin-right: 1rem;
 }
 
-.searchPage__headerBody > .search > .search__input {
-  /* margin-top: 0; */
-  width: unset;
-  margin: unset;
+.searchPage__headerBody {
+  max-width: 800px;
+}
+
+.searchPage__headerBody .search .search__input {
   max-width: unset;
+  width: auto;
+  margin: unset;
 }
 
 .searchPage__options {
   display: flex;
   align-items: center;
   color: gray;
+  font-size: 13px;
 }
 .searchPage__options a {
   text-decoration: none;
@@ -42,23 +65,43 @@
 .searchPage__option {
   display: flex;
   align-items: center;
-  margin-right: 1.25rem;
+  margin: 0px 20px 0px 5px;
+  padding-bottom: 1rem;
 }
-.searchPage__option {
-  margin-left: 5px;
+.searchPage__option--active {
+  border-bottom: 2px solid rgb(28, 116, 230);
+}
+.searchPage__option--active a,
+.searchPage__option--active .MuiSvgIcon-root {
+  color: rgb(67, 149, 231);
+}
+
+.searchPage__option .MuiSvgIcon-root {
+  font-size: 1rem;
+  margin-right: 0.2rem;
 }
 
 .searchPage__result {
-  margin: 40px 0;
+  margin: 20px 0;
 }
 .searchPage__results {
   max-width: 650px;
-  margin: 20px 0 100px 240px;
+  margin: 20px 0 200px 140px;
+  padding-bottom: 1rem;
+  /* background: #459; */
 }
 .searchPage__resultCount {
   color: #70757a;
-  font-size: 1rem;
+  font-size: 14px;
 }
+
+.searchPage__resultWebLink {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
 .searchPage__resultTitle {
   text-decoration: none;
 }
@@ -67,15 +110,17 @@
 }
 .searchPage__resultTitle > h2 {
   font-weight: 500;
+  font-size: 1.25rem;
 }
 
 .searchPage__resultSnippet {
-  margin-top: 10px;
+  margin-top: 8px;
+  font-size: 14px;
 }
 
 .searchPage__resultImage {
+  display: none;
   object-fit: contain;
-
   height: 1.25rem;
   width: 1.25rem;
   margin-right: 10px;

@@ -1,1 +1,18 @@
-
+.app {
+  min-height: 100vh;
+}
+.app__disclaimerContainer {
+  position: fixed;
+  width: 95%;
+  bottom: 60px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background: rgba(87, 162, 175, 0.863);
+  background: linear-gradient(
+    90deg,
+    rgba(97, 176, 201, 0.8) 0%,
+    rgba(178, 194, 89, 0.8) 45%,
+    rgba(133, 18, 106, 0.8) 100%
+  );
+  backdrop-filter: blur(2px);
+}

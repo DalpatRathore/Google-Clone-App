@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Search.css";
 import SearchIcon from "@material-ui/icons/Search";
 import KeyboardVoiceIcon from "@material-ui/icons/KeyboardVoice";
+import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router";
 import { useStateValue } from "../StateProvider";
@@ -14,13 +15,18 @@ const Search = ({ hideButtons = false }) => {
   const search = e => {
     e.preventDefault();
     // alert(input);
-
-    dispatch({
-      type: actionTypes.SET_SEARCH_TERM,
-      term: input,
-    });
-    history.push("/search");
+    if (input) {
+      dispatch({
+        type: actionTypes.SET_SEARCH_TERM,
+        term: input,
+      });
+      history.push(`/search/${input}`);
+    }
   };
+  const doodles = e => {
+    e.preventDefault();
+  };
+
   return (
     <form className="search">
       <div className="search__input">
@@ -37,7 +43,7 @@ const Search = ({ hideButtons = false }) => {
           <Button type="submit" variant="outlined" onClick={search}>
             Google Search
           </Button>
-          <Button type="submit" variant="outlined">
+          <Button type="submit" variant="outlined" onClick={doodles}>
             I'm Feeling Lucky
           </Button>
         </div>
@@ -52,6 +58,7 @@ const Search = ({ hideButtons = false }) => {
             Google Search
           </Button>
           <Button
+            type="submit"
             className="search__buttonsHidden"
             type="submit"
             variant="outlined"
