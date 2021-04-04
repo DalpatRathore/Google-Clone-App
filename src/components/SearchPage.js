@@ -17,6 +17,7 @@ import Footer from "../pages/Footer";
 
 const SearchPage = () => {
   const [{ term }, dispatch] = useStateValue();
+
   /*  ---- Live API for Google Search Results ----- */
   // const { data } = useGoogleSearch(term);
 
@@ -40,7 +41,7 @@ const SearchPage = () => {
             />
           </Link>
           <div className="searchPage__headerBody">
-            <Search hideButtons></Search>
+            <Search hideButtons input></Search>
             <div className="searchPage__options">
               <div className="searchPage__optionsLeft">
                 <div className="searchPage__option searchPage__option--active">
@@ -96,8 +97,8 @@ const SearchPage = () => {
             About{data?.searchInformation.formattedTotalResults} results (
             {data?.searchInformation.formattedSearchTime} seconds) for {term}
           </p>
-          {data?.items.map(item => (
-            <div className="searchPage__result">
+          {data?.items.map((item, index) => (
+            <div className="searchPage__result" key={index}>
               <a href={item.link} className="searchPage__resultWebLink">
                 {item.pagemap?.cse_image?.length > 0 &&
                   item.pagemap?.cse_image[0]?.src && (

@@ -1,29 +1,62 @@
 .disclaimer {
-  padding: 0.5rem;
-  min-height: 50px;
+  width: 95%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
   box-shadow: 0px 0px 3px #111;
   border-radius: 20px;
+  margin: 0.5rem;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+}
+.disclaimer__toolTip {
+  font-size: 12px;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: -40%;
+  left: 40%;
+  padding: 5px;
+  border-radius: 5px;
+  background: #666;
+  color: rgb(226, 216, 216);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.disclaimer__toolTip::before {
+  position: absolute;
+  content: "";
+  top: -15%;
+  left: 45%;
+  transform: rotate(45deg);
+  border: 5px solid transparent;
+  border-top-color: #666;
+  border-left-color: #666;
+}
+.disclaimer:hover .disclaimer__toolTip {
+  opacity: 0.81;
 }
 
 .disclaimer__text {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-family: "Segoe UI", sans-serif;
   letter-spacing: 1px;
   color: rgb(5, 11, 66);
   margin: 0.3rem;
+  word-wrap: break-word;
+  font-weight: 400;
+  font-style: italic;
 }
-.disclaimer__text > strong {
-  margin: 0 5px 0 5px;
+.disclaimer__text strong {
+  margin: 0 3px;
+  font-style: normal;
 }
 
 .disclaimer__text > .MuiSvgIcon-root {
   font-size: 1.2rem;
-  /* margin-right: 0.3rem; */
 }
 .disclaimer__text--warning {
   color: maroon;

@@ -2,10 +2,10 @@ import "./App.css";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SearchPage from "./components/SearchPage";
-
 import Footer from "./pages/Footer";
 import Disclaimer from "./components/Disclaimer";
 import Login from "./pages/Login";
+import Draggable from "react-draggable";
 
 function App() {
   return (
@@ -24,9 +24,11 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <div className="app__disclaimerContainer">
-        <Disclaimer cloneAppName="Google"></Disclaimer>
-      </div>
+      <Draggable>
+        <div className="app__disclaimerContainer">
+          <Disclaimer cloneAppName="Google"></Disclaimer>
+        </div>
+      </Draggable>
     </div>
   );
 }

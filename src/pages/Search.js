@@ -30,7 +30,7 @@ const Search = ({ hideButtons = false }) => {
   return (
     <form className="search">
       <div className="search__input">
-        <SearchIcon className="search__inputIcon"></SearchIcon>
+        <SearchIcon className="search__inputIcon" onClick={search}></SearchIcon>
         <input
           type="text"
           value={input}

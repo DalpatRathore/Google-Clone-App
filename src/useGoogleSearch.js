@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { API_KEY, CONTEXT_KEY } from "./config";
 const useGoogleSearch = term => {
   const [data, setData] = useState(null);

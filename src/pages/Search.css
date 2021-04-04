@@ -24,6 +24,7 @@
 
 .search__inputIcon {
   color: gray;
+  cursor: pointer;
 }
 
 .search__buttons {
