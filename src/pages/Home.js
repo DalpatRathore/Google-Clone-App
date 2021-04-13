@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import google from "../google.png";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import { Avatar, Button } from "@material-ui/core";
@@ -17,7 +18,7 @@ const Home = () => {
         {isLogin ? (
           <Avatar onClick={e => setIsLogin(false)}></Avatar>
         ) : (
-          <Link to="/login">
+          <Link to="/login" className="home__signLink">
             <Button
               onClick={e => setIsLogin(true)}
               variant="contained"
@@ -29,10 +30,7 @@ const Home = () => {
         )}
       </div>
       <div className="home__body">
-        <img
-          src="https://s.abcnews.com/images/Technology/ht_google_lb_150901_16x9_992.jpg"
-          alt=""
-        />
+        <img src={google} alt="google logo" />
         <div className="home__inputContainer">
           <Search></Search>
         </div>

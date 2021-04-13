@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SearchPage from "./components/SearchPage";
-import Footer from "./pages/Footer";
+import Footer from "./components/Footer";
 import Disclaimer from "./components/Disclaimer";
 import Login from "./pages/Login";
 import Draggable from "react-draggable";

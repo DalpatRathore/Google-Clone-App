@@ -16,12 +16,18 @@
   font-size: 12px;
   letter-spacing: 1px;
   position: absolute;
-  bottom: -40%;
+  bottom: -45%;
   left: 40%;
   padding: 5px;
   border-radius: 5px;
-  background: #666;
-  color: rgb(226, 216, 216);
+  background: maroon;
+
+  background: linear-gradient(
+    90deg,
+    rgb(14, 85, 109) 0%,
+    rgb(141, 22, 113) 100%
+  );
+  color: #fff;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
@@ -32,8 +38,8 @@
   left: 45%;
   transform: rotate(45deg);
   border: 5px solid transparent;
-  border-top-color: #666;
-  border-left-color: #666;
+  border-left-color: rgb(92, 23, 76);
+  border-top-color: rgb(109, 33, 91);
 }
 .disclaimer:hover .disclaimer__toolTip {
   opacity: 0.81;
@@ -47,8 +53,9 @@
   color: rgb(5, 11, 66);
   margin: 0.3rem;
   word-wrap: break-word;
-  font-weight: 400;
+  font-weight: 550;
   font-style: italic;
+  font-size: 0.8rem;
 }
 .disclaimer__text strong {
   margin: 0 3px;
@@ -56,7 +63,7 @@
 }
 
 .disclaimer__text > .MuiSvgIcon-root {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .disclaimer__text--warning {
   color: maroon;

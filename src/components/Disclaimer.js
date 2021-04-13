@@ -14,8 +14,8 @@ const Disclaimer = ({ cloneAppName }) => {
       <p className="disclaimer__text">
         <AdjustRoundedIcon></AdjustRoundedIcon>
         <strong>OBJECTIVE: </strong>
-        Purpose of making this {cloneAppName} Clone Application is to showcase
-        Programming Skills.
+        Purpose of making this Clone Application is to showcase Programming
+        Skills.
       </p>
       <span className="disclaimer__toolTip">Box Draggable</span>
     </div>

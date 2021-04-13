@@ -1,6 +1,7 @@
 .home {
   display: flex;
   flex-direction: column;
+  height: 84vh;
 }
 
 .home__header {
@@ -38,23 +39,30 @@
 }
 
 .home__header > .MuiSvgIcon-root:hover {
-  background: #ddd;
+  background: #eee;
 }
 
 .home__header button {
   text-transform: inherit;
   background: #1a73e8;
 }
+.home__header button:hover {
+  background: #317bdb;
+}
+.home__header .home__signLink:hover {
+  text-decoration: none;
+}
 
 .home__body {
   flex: 1;
   display: flex;
-  margin-top: 10px;
+  margin-top: 40px;
   flex-direction: column;
   /* background: #069; */
 }
 
 .home__body > img {
   object-fit: contain;
-  height: 180px;
+  height: 100px;
+  margin-bottom: 2rem;
 }

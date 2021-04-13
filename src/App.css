@@ -12,7 +12,8 @@
   left: 0;
 
   /* padding: 0.5rem; */
-  border-radius: 10px;
+  border-radius: 20px;
+  padding: 0.3rem 0rem;
   background: rgba(87, 162, 175, 0.863);
   background: linear-gradient(
     90deg,
