@@ -20,14 +20,15 @@ const Search = () => {
       dispatch({
         type: actionTypes.SET_SEARCH_TERM,
         term: input,
+        startIndex: 1,
       });
-      history.push(`/search?term=${input}`);
+      history.push(`/search?term=${input}&start=1`);
       document.title = `${input} - Google Search`;
     }
   };
   useEffect(() => {
     inputRef.current.focus();
-  });
+  }, []);
 
   const doodles = e => {
     e.preventDefault();

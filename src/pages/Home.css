@@ -8,15 +8,13 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0.5rem 1rem;
-  height: 8vh;
-  /* background: #069; */
+  padding: 8px 20px;
+  height: 55px;
 }
 
 .home__header a {
   margin-right: 1.25rem;
   text-decoration: none;
-
   color: #70757a;
   font-size: 13px;
 }
@@ -30,9 +28,9 @@
 }
 
 .home__header > .MuiSvgIcon-root {
-  margin-right: 1.25rem;
+  margin-right: 20px;
   font-size: 1.5rem;
-  padding: 0.3rem;
+  padding: 5px;
   cursor: pointer;
   border-radius: 50%;
   color: #666;
@@ -45,12 +43,10 @@
 .home__header button {
   text-transform: inherit;
   background: #1a73e8;
+  padding: 7px 25px;
 }
 .home__header button:hover {
   background: #317bdb;
-}
-.home__header .home__signLink:hover {
-  text-decoration: none;
 }
 
 .home__body {
@@ -58,7 +54,6 @@
   display: flex;
   margin-top: 40px;
   flex-direction: column;
-  /* background: #069; */
 }
 
 .home__body > img {
