@@ -4,9 +4,9 @@
 
 ## Description
 
-Developed Google Clone following the tutorial of the Clever Programmer Youtube channel.
+Google Clone Applcation developed and deployed following the tutorial of the Clever Programmer Youtube channel.
 
-## Source of learning and tutorial link:
+## Source of Learning & Tutorial Link:
 
 #### Clever Programmer: [Youtube Tutorial](https://youtu.be/DAWWf7q8sqM?list=PL-J2q3Ga50oMQa1JdSJxYoZELwOJAXExP)
 
