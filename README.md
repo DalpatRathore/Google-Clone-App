@@ -2,27 +2,22 @@
 
 #### Live Demo: [Google Clone](https://cloneapp111.web.app/)
 
-## Description
+**Description:** Google Clone Applcation developed and deployed following the tutorial of the Clever Programmer Youtube channel.
 
-Google Clone Applcation developed and deployed following the tutorial of the Clever Programmer Youtube channel.
+**Source of Learning:** *Clever Programmer* - [Youtube Tutorial](https://youtu.be/DAWWf7q8sqM?list=PL-J2q3Ga50oMQa1JdSJxYoZELwOJAXExP)
 
-## Source of Learning & Tutorial Link:
 
-#### Clever Programmer: [Youtube Tutorial](https://youtu.be/DAWWf7q8sqM?list=PL-J2q3Ga50oMQa1JdSJxYoZELwOJAXExP)
+#### `Screenshot-1`
 
-## Google Clone Screenshots :-
+### ![screenshot-1](https://github.com/DalpatRathore/Google-Clone-App/blob/main/screenshots/screenshot-1.jpg)
 
-### `Screenshot-1`
+#### `Screenshot-2`
 
-## ![screenshot-1](https://github.com/DalpatRathore/Google-Clone-App/blob/main/screenshots/screenshot-1.jpg)
+### ![screenshot-2](https://github.com/DalpatRathore/Google-Clone-App/blob/main/screenshots/screenshot-2.jpg)
 
-### `Screenshot-2`
+#### `Screenshot-3`
 
-## ![screenshot-2](https://github.com/DalpatRathore/Google-Clone-App/blob/main/screenshots/screenshot-2.jpg)
-
-### `Screenshot-3`
-
-## ![screenshot-3](https://github.com/DalpatRathore/Google-Clone-App/blob/main/screenshots/screenshot-3.jpg)
+### ![screenshot-3](https://github.com/DalpatRathore/Google-Clone-App/blob/main/screenshots/screenshot-3.jpg)
 
 ### NOTE
 
