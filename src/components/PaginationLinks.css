@@ -15,7 +15,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 0px;
+  padding: 0;
 }
 .paginationLinks__btnPN {
   color: #4285f4;
@@ -27,7 +27,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 0px;
+  padding: 0;
   margin-top: 5px;
   /* background: chartreuse; */
 }
@@ -98,7 +98,7 @@
 }
 
 .paginationLinks__pn {
-  margin-top: 0px;
+  margin-top: 0;
   font-weight: 500;
 }
 
