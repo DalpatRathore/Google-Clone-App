@@ -1,7 +1,5 @@
 # Google Clone
 
-#### Live Demo: [Google Clone](https://cloneapp111.web.app/)
-
 **Description:** Google Clone Applcation developed and deployed following the tutorial of the Clever Programmer Youtube channel.
 
 **Source of Learning:** *Clever Programmer* - [Youtube Tutorial](https://youtu.be/DAWWf7q8sqM?list=PL-J2q3Ga50oMQa1JdSJxYoZELwOJAXExP)
